@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c2bee96.chunk.css",
+    "main.css": "/static/css/main.e24034ec.chunk.css",
     "main.js": "/static/js/main.181668cc.chunk.js",
     "main.js.map": "/static/js/main.181668cc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ffd339f4.js",
@@ -8,9 +8,9 @@
     "static/js/2.862e5f73.chunk.js": "/static/js/2.862e5f73.chunk.js",
     "static/js/2.862e5f73.chunk.js.map": "/static/js/2.862e5f73.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bc160c5e5946c87f1acd3c4d53e64c09.js": "/precache-manifest.bc160c5e5946c87f1acd3c4d53e64c09.js",
+    "precache-manifest.2d9b15772011300b5715fd9aaf82166f.js": "/precache-manifest.2d9b15772011300b5715fd9aaf82166f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3c2bee96.chunk.css.map": "/static/css/main.3c2bee96.chunk.css.map",
+    "static/css/main.e24034ec.chunk.css.map": "/static/css/main.e24034ec.chunk.css.map",
     "static/js/2.862e5f73.chunk.js.LICENSE.txt": "/static/js/2.862e5f73.chunk.js.LICENSE.txt",
     "static/media/before-the-game.svg": "/static/media/before-the-game.b3077889.svg",
     "static/media/create-a-room.svg": "/static/media/create-a-room.423c60bb.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.ffd339f4.js",
     "static/js/2.862e5f73.chunk.js",
-    "static/css/main.3c2bee96.chunk.css",
+    "static/css/main.e24034ec.chunk.css",
     "static/js/main.181668cc.chunk.js"
   ]
 }
