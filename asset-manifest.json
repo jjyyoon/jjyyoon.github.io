@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.f9e8edb7.chunk.css",
-    "main.js": "/static/js/main.6089ecb1.chunk.js",
-    "main.js.map": "/static/js/main.6089ecb1.chunk.js.map",
+    "main.css": "/static/css/main.3c2bee96.chunk.css",
+    "main.js": "/static/js/main.181668cc.chunk.js",
+    "main.js.map": "/static/js/main.181668cc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ffd339f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.ffd339f4.js.map",
-    "static/js/2.bc1c9a33.chunk.js": "/static/js/2.bc1c9a33.chunk.js",
-    "static/js/2.bc1c9a33.chunk.js.map": "/static/js/2.bc1c9a33.chunk.js.map",
+    "static/js/2.862e5f73.chunk.js": "/static/js/2.862e5f73.chunk.js",
+    "static/js/2.862e5f73.chunk.js.map": "/static/js/2.862e5f73.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9172e5f2fcac0bebe47f537ac971e0c9.js": "/precache-manifest.9172e5f2fcac0bebe47f537ac971e0c9.js",
+    "precache-manifest.bc160c5e5946c87f1acd3c4d53e64c09.js": "/precache-manifest.bc160c5e5946c87f1acd3c4d53e64c09.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.f9e8edb7.chunk.css.map": "/static/css/main.f9e8edb7.chunk.css.map",
-    "static/js/2.bc1c9a33.chunk.js.LICENSE.txt": "/static/js/2.bc1c9a33.chunk.js.LICENSE.txt",
+    "static/css/main.3c2bee96.chunk.css.map": "/static/css/main.3c2bee96.chunk.css.map",
+    "static/js/2.862e5f73.chunk.js.LICENSE.txt": "/static/js/2.862e5f73.chunk.js.LICENSE.txt",
     "static/media/before-the-game.svg": "/static/media/before-the-game.b3077889.svg",
     "static/media/create-a-room.svg": "/static/media/create-a-room.423c60bb.svg",
     "static/media/during-the-game.svg": "/static/media/during-the-game.ab531cbf.svg",
     "static/media/game-page.svg": "/static/media/game-page.1d249e11.svg",
     "static/media/homepage.svg": "/static/media/homepage.2e8aa159.svg",
+    "static/media/profile.jpg": "/static/media/profile.08c573a2.jpg",
     "static/media/room-list-page.svg": "/static/media/room-list-page.cabb5026.svg",
     "static/media/sign-in-page.svg": "/static/media/sign-in-page.a5c281ca.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ffd339f4.js",
-    "static/js/2.bc1c9a33.chunk.js",
-    "static/css/main.f9e8edb7.chunk.css",
-    "static/js/main.6089ecb1.chunk.js"
+    "static/js/2.862e5f73.chunk.js",
+    "static/css/main.3c2bee96.chunk.css",
+    "static/js/main.181668cc.chunk.js"
   ]
 }
