@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.e24034ec.chunk.css",
-    "main.js": "/static/js/main.98516157.chunk.js",
-    "main.js.map": "/static/js/main.98516157.chunk.js.map",
+    "main.js": "/static/js/main.c630b086.chunk.js",
+    "main.js.map": "/static/js/main.c630b086.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ffd339f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.ffd339f4.js.map",
-    "static/js/2.bd24068d.chunk.js": "/static/js/2.bd24068d.chunk.js",
-    "static/js/2.bd24068d.chunk.js.map": "/static/js/2.bd24068d.chunk.js.map",
+    "static/js/2.7c4c4acd.chunk.js": "/static/js/2.7c4c4acd.chunk.js",
+    "static/js/2.7c4c4acd.chunk.js.map": "/static/js/2.7c4c4acd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c01feaa76ca9c0870d550142a0a2d064.js": "/precache-manifest.c01feaa76ca9c0870d550142a0a2d064.js",
+    "precache-manifest.d9ddeebb60ba1a766e675b2f4fa54fbd.js": "/precache-manifest.d9ddeebb60ba1a766e675b2f4fa54fbd.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.e24034ec.chunk.css.map": "/static/css/main.e24034ec.chunk.css.map",
-    "static/js/2.bd24068d.chunk.js.LICENSE.txt": "/static/js/2.bd24068d.chunk.js.LICENSE.txt",
+    "static/js/2.7c4c4acd.chunk.js.LICENSE.txt": "/static/js/2.7c4c4acd.chunk.js.LICENSE.txt",
     "static/media/before-the-game.svg": "/static/media/before-the-game.b3077889.svg",
     "static/media/create-a-room.svg": "/static/media/create-a-room.423c60bb.svg",
     "static/media/during-the-game.svg": "/static/media/during-the-game.ab531cbf.svg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ffd339f4.js",
-    "static/js/2.bd24068d.chunk.js",
+    "static/js/2.7c4c4acd.chunk.js",
     "static/css/main.e24034ec.chunk.css",
-    "static/js/main.98516157.chunk.js"
+    "static/js/main.c630b086.chunk.js"
   ]
 }
