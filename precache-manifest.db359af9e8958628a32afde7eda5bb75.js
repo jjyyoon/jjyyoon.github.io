@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "24832598e67a6ef3ab8354e012cbebfb",
+    "revision": "aa11725d159f56e9073c69efc6d56827",
     "url": "/index.html"
   },
   {
-    "revision": "b030dcac77658f45e0fb",
-    "url": "/static/css/main.e24034ec.chunk.css"
+    "revision": "1b9f7e284019721f08d6",
+    "url": "/static/css/main.79bc94cb.chunk.css"
   },
   {
-    "revision": "1d68d6eef89d375c3e63",
-    "url": "/static/js/2.862e5f73.chunk.js"
+    "revision": "6f5e6ac9bfa768b0504b",
+    "url": "/static/js/2.3ef532d5.chunk.js"
   },
   {
     "revision": "eff3b4d7e4bb0087ce53139cd90bc880",
-    "url": "/static/js/2.862e5f73.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3ef532d5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b030dcac77658f45e0fb",
-    "url": "/static/js/main.181668cc.chunk.js"
+    "revision": "1b9f7e284019721f08d6",
+    "url": "/static/js/main.ba3c5a5c.chunk.js"
   },
   {
     "revision": "af43a8a193db17ea48b2",
     "url": "/static/js/runtime-main.ffd339f4.js"
+  },
+  {
+    "revision": "61645b73b4c58d27597bd40d38aa771a",
+    "url": "/static/media/after-the-game.61645b73.svg"
   },
   {
     "revision": "b3077889d133a7dc513a72640456011b",
