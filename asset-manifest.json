@@ -1,31 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.79bc94cb.chunk.css",
-    "main.js": "/static/js/main.ba3c5a5c.chunk.js",
-    "main.js.map": "/static/js/main.ba3c5a5c.chunk.js.map",
+    "main.css": "/static/css/main.c041e7cc.chunk.css",
+    "main.js": "/static/js/main.e71170fd.chunk.js",
+    "main.js.map": "/static/js/main.e71170fd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ffd339f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.ffd339f4.js.map",
-    "static/js/2.3ef532d5.chunk.js": "/static/js/2.3ef532d5.chunk.js",
-    "static/js/2.3ef532d5.chunk.js.map": "/static/js/2.3ef532d5.chunk.js.map",
+    "static/js/2.822c2365.chunk.js": "/static/js/2.822c2365.chunk.js",
+    "static/js/2.822c2365.chunk.js.map": "/static/js/2.822c2365.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.db359af9e8958628a32afde7eda5bb75.js": "/precache-manifest.db359af9e8958628a32afde7eda5bb75.js",
+    "precache-manifest.1f491e11faf4792325881f42acc7a396.js": "/precache-manifest.1f491e11faf4792325881f42acc7a396.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.79bc94cb.chunk.css.map": "/static/css/main.79bc94cb.chunk.css.map",
-    "static/js/2.3ef532d5.chunk.js.LICENSE.txt": "/static/js/2.3ef532d5.chunk.js.LICENSE.txt",
+    "static/css/main.c041e7cc.chunk.css.map": "/static/css/main.c041e7cc.chunk.css.map",
+    "static/js/2.822c2365.chunk.js.LICENSE.txt": "/static/js/2.822c2365.chunk.js.LICENSE.txt",
     "static/media/after-the-game.svg": "/static/media/after-the-game.61645b73.svg",
+    "static/media/intro.styles.scss": "/static/media/background.fef905d7.jpg",
     "static/media/before-the-game.svg": "/static/media/before-the-game.b3077889.svg",
+    "static/media/cart-page.svg": "/static/media/cart-page.5cbefb21.svg",
+    "static/media/checkout-page.svg": "/static/media/checkout-page.b2ec85c9.svg",
+    "static/media/collection-page.svg": "/static/media/collection-page.403afbd3.svg",
     "static/media/create-a-room.svg": "/static/media/create-a-room.423c60bb.svg",
     "static/media/during-the-game.svg": "/static/media/during-the-game.ab531cbf.svg",
     "static/media/game-page.svg": "/static/media/game-page.1d249e11.svg",
-    "static/media/homepage.svg": "/static/media/homepage.2e8aa159.svg",
+    "static/media/homepage.svg": "/static/media/homepage.f69d5046.svg",
     "static/media/profile.jpg": "/static/media/profile.08c573a2.jpg",
     "static/media/room-list-page.svg": "/static/media/room-list-page.cabb5026.svg",
-    "static/media/sign-in-page.svg": "/static/media/sign-in-page.a5c281ca.svg"
+    "static/media/search.svg": "/static/media/search.9cef0a53.svg",
+    "static/media/sign-in-page.svg": "/static/media/sign-in-page.a5c281ca.svg",
+    "static/media/sign-in.svg": "/static/media/sign-in.87946bc3.svg",
+    "static/media/sign-up-page.svg": "/static/media/sign-up-page.6d8dca18.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ffd339f4.js",
-    "static/js/2.3ef532d5.chunk.js",
-    "static/css/main.79bc94cb.chunk.css",
-    "static/js/main.ba3c5a5c.chunk.js"
+    "static/js/2.822c2365.chunk.js",
+    "static/css/main.c041e7cc.chunk.css",
+    "static/js/main.e71170fd.chunk.js"
   ]
 }
