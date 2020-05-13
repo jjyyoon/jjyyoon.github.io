@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7185e84b7f694ebf87a27ec09a27a97",
+    "revision": "cdb55567eb817da0454f7348efe94ec5",
     "url": "/index.html"
   },
   {
-    "revision": "59f19351f1a3f4c1a1bd",
-    "url": "/static/css/main.c041e7cc.chunk.css"
+    "revision": "490a87d8ecbb746fc99b",
+    "url": "/static/css/main.cacfd429.chunk.css"
   },
   {
-    "revision": "9d89a7cb3ae94129bd3f",
-    "url": "/static/js/2.822c2365.chunk.js"
+    "revision": "4c8bd321597e1f40ff83",
+    "url": "/static/js/2.f02ad537.chunk.js"
   },
   {
     "revision": "eff3b4d7e4bb0087ce53139cd90bc880",
-    "url": "/static/js/2.822c2365.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f02ad537.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "59f19351f1a3f4c1a1bd",
-    "url": "/static/js/main.e71170fd.chunk.js"
+    "revision": "490a87d8ecbb746fc99b",
+    "url": "/static/js/main.4004cf07.chunk.js"
   },
   {
     "revision": "af43a8a193db17ea48b2",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/after-the-game.61645b73.svg"
   },
   {
-    "revision": "fef905d7d56a0d35fc0eabd3861cdbca",
-    "url": "/static/media/background.fef905d7.jpg"
+    "revision": "c1394bb579f88a3bbb188a350743ea59",
+    "url": "/static/media/background.c1394bb5.jpg"
   },
   {
     "revision": "b3077889d133a7dc513a72640456011b",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/checkout-page.b2ec85c9.svg"
   },
   {
-    "revision": "403afbd3dabcab06c9c500ca096b837e",
-    "url": "/static/media/collection-page.403afbd3.svg"
+    "revision": "c5613c4ec638ecfcdb43d822c425b9be",
+    "url": "/static/media/collection-page.c5613c4e.svg"
   },
   {
     "revision": "423c60bb60388c997d68cd136fa1e9d7",
@@ -76,8 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/room-list-page.cabb5026.svg"
   },
   {
-    "revision": "9cef0a53c14ccb420e47a8521df844bc",
-    "url": "/static/media/search.9cef0a53.svg"
+    "revision": "ff087967598fb83faeb7f4fbec3bce96",
+    "url": "/static/media/search.ff087967.svg"
   },
   {
     "revision": "a5c281ca001015895a0616a2429e76fe",
