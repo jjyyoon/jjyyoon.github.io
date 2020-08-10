@@ -1,0 +1,48 @@
+.menu {
+  width: 15%;
+  padding-top: 100px;
+
+  img {
+    border-radius: 50%;
+  }
+
+  .links {
+    padding: 50px 15px;
+
+    div {
+      padding-bottom: 7.5px;
+      color: rgb(128, 128, 128);
+      font-weight: 500;
+
+      &.project {
+        padding-bottom: 2.5px;
+      }
+
+      .link-to-code {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .icon-container {
+    padding-left: 15px;
+
+    svg {
+      height: 1.125em;
+      width: 1.125em;
+      margin-right: 10px;
+    }
+  }
+
+  a {
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+
+    &,
+    svg {
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.carousel {
+  padding-top: 15px;
+  background-color: #272121; //#282c34;
+  color: white;
+
+  img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3.75%;
+  }
+
+  .carousel-caption {
+    bottom: auto;
+    left: 5%;
+    text-align: left;
+
+    h5 {
+      font-weight: 600;
+      color: #ff7c7c;
+    }
+  }
+}

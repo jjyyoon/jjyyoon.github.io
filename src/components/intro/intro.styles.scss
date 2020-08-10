@@ -1,0 +1,31 @@
+.intro {
+  position: relative;
+
+  &::after,
+  .welcome {
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/background.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  .welcome {
+    padding-top: 100px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+
+    h1 {
+      font-size: 125px;
+      font-weight: 900;
+    }
+  }
+}

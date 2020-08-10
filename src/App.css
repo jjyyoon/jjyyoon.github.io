@@ -1,8 +1,39 @@
-.App {
-  background-color: #282c34;
-  min-height: 100vh;
+.App,
+.row,
+.carousel-inner {
+  height: 100%;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #eae6df;
+}
+
+.col {
+  flex-basis: auto;
+}
+
+.main {
+  width: 85%;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+}
+
+.main-item {
+  height: 100%;
+  width: 100%;
+  animation: fade-in 0.25s linear;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
