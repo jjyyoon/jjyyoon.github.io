@@ -5,22 +5,32 @@ import { Row, Col } from "react-bootstrap";
 import Menu from "./components/menu/menu.component";
 import Intro from "./components/intro/intro.component";
 import Slideshow from "./components/slideshow/slideshow.component";
+import Dijkstra from "./project/dijkstra/src/App";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Row>
-        <Menu />
-        <Col className="main">
-          <Switch>
-            <Route exact path="/" component={Intro} />
-            <Route path="/project/:projectName" render={() => <Slideshow />} />
-          </Switch>
-        </Col>
-      </Row>
-    </div>
+    <Switch>
+      <Route exact path="/dijkstra">
+        <Dijkstra />
+      </Route>
+      <Route path="/">
+        <div className="App">
+          <Row>
+            <Menu />
+            <Col className="main">
+              <Route exact path="/">
+                <Intro />
+              </Route>
+              <Route path="/projects/:projectName">
+                <Slideshow />
+              </Route>
+            </Col>
+          </Row>
+        </div>
+      </Route>
+    </Switch>
   );
 }
 

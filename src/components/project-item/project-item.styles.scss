@@ -1,0 +1,8 @@
+.links div p {
+    font-size: 0.83em;
+    font-weight: 400;
+
+    &::before {
+        content: "　　";
+    }
+}
