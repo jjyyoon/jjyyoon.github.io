@@ -1,5 +1,5 @@
 .menu {
-  width: 15%;
+  width: 17.5%;
   padding-top: 100px;
 
   img {
@@ -9,18 +9,12 @@
   .links {
     padding: 50px 15px;
 
-    div {
-      padding-bottom: 7.5px;
+    & > a,
+    & > div {
+      display: block;
+      padding-bottom: 0.5rem;
       color: rgb(128, 128, 128);
-      font-weight: 500;
-
-      &.project {
-        padding-bottom: 2.5px;
-      }
-
-      .link-to-code {
-        font-size: 0.75rem;
-      }
+      font-weight: 600;
     }
   }
 
@@ -28,8 +22,8 @@
     padding-left: 15px;
 
     svg {
-      height: 1.125em;
-      width: 1.125em;
+      height: 1.5rem;
+      width: 1.5rem;
       margin-right: 10px;
     }
   }

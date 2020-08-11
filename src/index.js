@@ -2,13 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
 
+// This is for the Dijkstra's Algorithm App.
+import { Provider } from "react-redux";
+import store from "./project/dijkstra/src/redux/store";
+
 import App from "./App";
 
 import "./index.css";
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <Provider store={store}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>,
   document.getElementById("root")
 );
