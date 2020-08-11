@@ -6,7 +6,7 @@ const ProjectItem = ({ name, to, site }) => (
   <div>
     <MenuLink to={"/projects/" + to} content={"　· " + name} />
     <p>
-      <MenuLink href={"https://github.com/jjyyoon/" + to} content="View code" />
+      <MenuLink href={"https://github.com/jjyyoon/" + to} content="Source code" />
       {"｜"}
       <MenuLink href={site} content={!site ? "Online soon" : "View online"} />
     </p>

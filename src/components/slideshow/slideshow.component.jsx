@@ -26,7 +26,7 @@ const Slideshow = () => {
     }
 
     return (
-      <div className="not-found">
+      <div className="no-match">
         <h1>Please click one of the projects on the menu.</h1>
         <h2>Thank you.</h2>
       </div>
