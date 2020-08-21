@@ -1,7 +1,13 @@
 import { combineReducers } from "redux";
 
-const graph = (state = { nodes: null, edges: null }, action) => {
+const graph = (state = { nodes: null, edges: null, useRealDist: false }, action) => {
   switch (action.type) {
+    case "CHANGE_SETTING":
+      return {
+        ...state,
+        edges: action.edges,
+        useRealDist: !state.useRealDist
+      };
     case "GENERATE_GRAPH":
     case "UPDATE_GRAPH":
       return {
@@ -14,6 +20,7 @@ const graph = (state = { nodes: null, edges: null }, action) => {
         ...state,
         nodes: action.nodes
       };
+    case "UPDATE_EDGE":
     case "UPDATE_EDGES":
       return {
         ...state,
@@ -24,7 +31,7 @@ const graph = (state = { nodes: null, edges: null }, action) => {
   }
 };
 
-const INITIAL_STATE = { source: null, target: null, path: null, shown: false };
+const INITIAL_STATE = { source: null, target: null, path: null, dist: null, shown: false };
 
 const result = (state = INITIAL_STATE, action) => {
   switch (action.type) {
@@ -34,11 +41,17 @@ const result = (state = INITIAL_STATE, action) => {
         source: action.source,
         target: action.target,
         path: action.path,
+        dist: action.dist,
         shown: action.shown
       };
     case "RESET_RESULT":
       return INITIAL_STATE;
-    case "TOGGLE_RESULT_SHOWN":
+    case "STOP_ANIMATION":
+      return {
+        ...state,
+        shown: false
+      };
+    case "TOGGLE_ANIMATION_SHOWN":
       return {
         ...state,
         shown: !state.shown
