@@ -5,6 +5,7 @@ import { Row, Col } from "react-bootstrap";
 import Menu from "./components/menu/menu.component";
 import Intro from "./components/intro/intro.component";
 import Slideshow from "./components/slideshow/slideshow.component";
+import CV from "./components/cv/cv.component";
 import Dijkstra from "./project/dijkstra/src/App";
 
 import "./App.css";
@@ -25,6 +26,9 @@ function App() {
               </Route>
               <Route path="/projects/:projectName">
                 <Slideshow />
+              </Route>
+              <Route path="/cv">
+                <CV />
               </Route>
             </Col>
           </Row>
