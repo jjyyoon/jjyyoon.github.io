@@ -18,6 +18,7 @@ const Menu = () => (
       <ProjectItem name="Tic-Tac-Toe" to="tic-tac-toe-online" site={null} />
       <ProjectItem name="e-commerce" to="e-commerce" site="https://starletclothing.co.uk/" />
       <ProjectItem name="Dijkstra's algorithm" to="dijkstra" site="/#/dijkstra" />
+      <MenuLink to="/cv" content="CV (Curriculum Vitae)" />
     </div>
 
     <div className="icon-container">
