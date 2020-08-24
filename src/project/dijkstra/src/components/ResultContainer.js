@@ -1,44 +1,54 @@
 import React from "react";
 import { connect } from "react-redux";
-import { toggleResultShown } from "../redux/actions";
-import { getPathInLabel } from "../redux/selectors";
+import { toggleAnimationShown } from "../redux/actions";
+import { getPathStr } from "../redux/selectors";
 
-const ResultContainer = ({ source, target, path, shown, toggleResultShown }) => {
-  if (!path) {
+import CustomButton from "./CustomButton";
+import { ReactComponent as ExclamationOutline } from "../assets/exclamation-outline.svg";
+
+const ResultContainer = ({ useRealDist, pathStr, dist, shown, toggleAnimationShown }) => {
+  if (!dist) {
     return (
-      <div className="h-1/10 p-4">
-        <h2>{`There is no path from ${source} to ${target}.`}</h2>
-      </div>
+      <h2 className="mt-2 pt-2 border-t border-gray-300">
+        <ExclamationOutline className="w-6 h-6 inline-block" />
+        {`There is no path ${pathStr}.`}
+      </h2>
     );
   }
 
   return (
-    <div className="h-1/10 p-4">
-      <div className="inline-block">
-        <h2>{`The shortest path is ${path}.`}</h2>
+    <div className="mt-2 py-2 border-t border-b border-gray-300 box-with-btn">
+      <div>
+        <h3>
+          The shortest path is <span className="text-2xl">{pathStr}</span> and its total distance is{" "}
+          <span className="text-2xl">{useRealDist ? dist.toFixed(2) : dist}</span>.
+        </h3>
         <p className="text-sm italic">
-          *The result would be reset if you resize the browser window or change the position of a
-          node.
+          *The result will reset if you change node settings
+          {useRealDist ? ", resize the browser window or move the position of the nodes." : "."}
         </p>
       </div>
-      <button
-        className="float-right bg-transparent hover:bg-green-600 text-green-700 hover:text-white border border-green-500"
-        onClick={toggleResultShown}
-      >
-        {shown ? "Stop" : "Restart"} Animation
-      </button>
+      <CustomButton
+        content={`${shown ? "Stop" : "Restart"} Animation`}
+        outline={true}
+        color="green"
+        handleClick={toggleAnimationShown}
+      />
     </div>
   );
 };
 
 const mapStateToProps = state => {
-  const { source, target, shown } = state.result;
+  const {
+    graph: { useRealDist },
+    result: { dist, shown }
+  } = state;
 
-  return { source, target, path: getPathInLabel(state), shown };
+  return { useRealDist, pathStr: getPathStr(state), dist, shown };
 };
 
 const mapDispatchToProps = dispatch => ({
-  toggleResultShown: () => dispatch(toggleResultShown())
+  toggleAnimationShown: () => dispatch(toggleAnimationShown())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ResultContainer);

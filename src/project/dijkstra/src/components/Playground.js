@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { updateGraph, resetResult } from "../redux/actions";
-import { getNodesCount } from "../redux/selectors";
+import { updateGraph, resetResult, stopAnimation } from "../redux/actions";
 
+import Repeat from "./Repeat";
 import Node from "./Node";
 import Path from "./Path";
 import ShowResult from "./ShowResult";
@@ -11,7 +11,7 @@ class Playground extends React.Component {
   constructor(props) {
     super(props);
     const { innerWidth, innerHeight } = window;
-    this.state = { width: innerWidth * 0.8, height: innerHeight * 0.9 };
+    this.state = { width: innerWidth * 0.8, height: innerHeight * 0.85 };
   }
 
   componentDidMount() {
@@ -23,19 +23,23 @@ class Playground extends React.Component {
   }
 
   handleResize = ({ target: { innerWidth, innerHeight } }) => {
-    const { resetResult, updateGraph } = this.props;
-    resetResult();
+    const { useRealDist, resetResult, stopAnimation, updateGraph } = this.props;
+
+    if (useRealDist) {
+      resetResult();
+    } else {
+      stopAnimation();
+    }
 
     const { width, height } = this.state;
-    updateGraph((innerWidth * 0.8) / width, (innerHeight * 0.9) / height);
+    updateGraph((innerWidth * 0.8) / width, (innerHeight * 0.85) / height);
 
-    this.setState({ width: innerWidth * 0.8, height: innerHeight * 0.9 });
+    this.setState({ width: innerWidth * 0.8, height: innerHeight * 0.85 });
   };
 
   render() {
-    const { edges, nodeCount, shown } = this.props;
+    const { shown } = this.props;
     const { width, height } = this.state;
-    const keys = [...Array(nodeCount).keys()];
 
     return (
       <svg
@@ -43,37 +47,32 @@ class Playground extends React.Component {
         className="absolute bottom-0"
         viewBox={`${-width / 8} ${-height / 8} ${width} ${height}`}
       >
-        {edges.map((source, i) =>
-          source.map((target, j) => {
-            if (!target || i > j) {
-              return null;
-            }
-
-            return <Path key={`${i}${j}`} id={`path${i}${j}`} sourceId={i} targetId={j} />;
-          })
-        )}
+        <foreignObject className="w-full h-16 p-4" x={-width / 8} y={-height / 8}>
+          <p>
+            • Drag and drop the nodes<span className="text-gray-600">(points)</span> anywhere you
+            want.
+          </p>
+          <p>
+            • Click the Change Node Settings button at the top right of the page and select a node
+            to be changed.
+          </p>
+        </foreignObject>
+        <Repeat>
+          {i => <Repeat key={i}>{j => <Path key={`${i}${j}`} sourceId={i} targetId={j} />}</Repeat>}
+        </Repeat>
         {shown && <ShowResult />}
-        {keys.map(key => (
-          <Node key={key} idx={key} width={width} height={height} />
-        ))}
+        <Repeat>{idx => <Node key={idx} idx={idx} width={width} height={height} />}</Repeat>
       </svg>
     );
   }
 }
 
-const mapStateToProps = state => {
-  const { graph, result } = state;
-
-  return {
-    edges: graph.edges,
-    nodeCount: getNodesCount(state),
-    shown: result.shown
-  };
-};
+const mapStateToProps = ({ graph: { useRealDist }, result: { shown } }) => ({ useRealDist, shown });
 
 const mapDispatchToProps = dispatch => ({
   updateGraph: (forX, forY) => dispatch(updateGraph(forX, forY)),
-  resetResult: () => dispatch(resetResult())
+  resetResult: () => dispatch(resetResult()),
+  stopAnimation: () => dispatch(stopAnimation())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Playground);

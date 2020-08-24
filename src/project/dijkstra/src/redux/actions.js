@@ -1,21 +1,49 @@
 import { generateNodes, generateEdges, findTheShortestPath } from "../helpers";
 
-export const generateGraph = (num, maxX, maxY) => {
-  const nodes = generateNodes(num, maxX, maxY);
+export const changeSetting = () => {
+  return (dispatch, getState) => {
+    const { useRealDist, nodes, edges } = getState().graph;
 
-  return {
-    type: "GENERATE_GRAPH",
-    nodes,
-    edges: generateEdges(nodes)
+    return dispatch({ type: "CHANGE_SETTING", edges: generateEdges(nodes, !useRealDist, edges) });
   };
 };
 
-export const updateNode = (idx, x, y) => {
+export const generateGraph = (num, maxX, maxY) => {
   return (dispatch, getState) => {
-    const { nodes } = getState().graph;
-    nodes[idx] = { ...nodes[idx], x, y };
+    const nodes = generateNodes(num, maxX, maxY);
+    const { useRealDist } = getState().graph;
 
-    return dispatch({ type: "UPDATE_NODE", nodes });
+    return dispatch({
+      type: "GENERATE_GRAPH",
+      nodes,
+      edges: generateEdges(nodes, useRealDist)
+    });
+  };
+};
+
+export const updateNode = (idx, updateInfo) => {
+  return (dispatch, getState) => {
+    const newNodes = getState().graph.nodes.slice();
+    newNodes[idx] = { ...newNodes[idx], ...updateInfo };
+
+    return dispatch({ type: "UPDATE_NODE", nodes: newNodes });
+  };
+};
+
+export const updateEdge = (sourceId, targetId, edge) => {
+  return (dispatch, getState) => {
+    let { useRealDist, nodes, edges } = getState().graph;
+
+    if (useRealDist && edge) {
+      const source = nodes[sourceId];
+      const target = nodes[targetId];
+      edge = Math.hypot(source.x - target.x, source.y - target.y);
+    }
+
+    edges[sourceId][targetId] = edge;
+    edges[targetId][sourceId] = edge;
+
+    return dispatch({ type: "UPDATE_EDGE", edges });
   };
 };
 
@@ -45,14 +73,16 @@ export const updateEdges = idx => {
 
 export const updateGraph = (forX, forY) => {
   return (dispatch, getState) => {
-    let { nodes, edges } = getState().graph;
+    let { useRealDist, nodes, edges } = getState().graph;
 
     nodes.forEach((node, idx) => {
       nodes[idx] = { ...nodes[idx], x: node.x * forX, y: node.y * forY };
     });
 
-    for (let i = 0; i < edges.length - 1; i++) {
-      edges = calcEdges(nodes, edges, i, true);
+    if (useRealDist) {
+      for (let i = 0; i < edges.length - 1; i++) {
+        edges = calcEdges(nodes, edges, i, true);
+      }
     }
 
     return dispatch({ type: "UPDATE_GRAPH", nodes, edges });
@@ -64,21 +94,14 @@ export const setResult = (source, target) => {
     const { edges } = getState().graph;
     const result = findTheShortestPath(edges, source.id, target.id);
 
-    let path = null;
-    let shown = false;
+    let action = { path: null, dist: null, shown: false };
 
     if (result[target.id]) {
-      path = result[target.id].path;
-      shown = true;
+      const { path, dist } = result[target.id];
+      action = { path, dist, shown: true };
     }
 
-    return dispatch({
-      type: "SET_RESULT",
-      source: source.label,
-      target: target.label,
-      path,
-      shown
-    });
+    return dispatch({ type: "SET_RESULT", source: source.label, target: target.label, ...action });
   };
 };
 
@@ -92,4 +115,14 @@ export const resetResult = () => {
   };
 };
 
-export const toggleResultShown = () => ({ type: "TOGGLE_RESULT_SHOWN" });
+export const stopAnimation = () => {
+  return (dispatch, getState) => {
+    const { shown } = getState().result;
+
+    if (shown) {
+      return dispatch({ type: "STOP_ANIMATION" });
+    }
+  };
+};
+
+export const toggleAnimationShown = () => ({ type: "TOGGLE_ANIMATION_SHOWN" });
