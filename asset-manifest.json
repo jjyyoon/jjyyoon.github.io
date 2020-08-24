@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7520c00.chunk.css",
-    "main.js": "/static/js/main.8a5061e2.chunk.js",
-    "main.js.map": "/static/js/main.8a5061e2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ffd339f4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ffd339f4.js.map",
-    "static/js/2.feb3fcb1.chunk.js": "/static/js/2.feb3fcb1.chunk.js",
-    "static/js/2.feb3fcb1.chunk.js.map": "/static/js/2.feb3fcb1.chunk.js.map",
+    "main.css": "/static/css/main.40455b68.chunk.css",
+    "main.js": "/static/js/main.5378f7cb.chunk.js",
+    "main.js.map": "/static/js/main.5378f7cb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9b126251.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9b126251.js.map",
+    "static/js/2.3aef39f8.chunk.js": "/static/js/2.3aef39f8.chunk.js",
+    "static/js/2.3aef39f8.chunk.js.map": "/static/js/2.3aef39f8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e4857f3b78576c14bc13a25c41bdf518.js": "/precache-manifest.e4857f3b78576c14bc13a25c41bdf518.js",
+    "precache-manifest.db278525ba7e21cd38bcbc39d3902de5.js": "/precache-manifest.db278525ba7e21cd38bcbc39d3902de5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b7520c00.chunk.css.map": "/static/css/main.b7520c00.chunk.css.map",
-    "static/js/2.feb3fcb1.chunk.js.LICENSE.txt": "/static/js/2.feb3fcb1.chunk.js.LICENSE.txt",
+    "static/css/main.40455b68.chunk.css.map": "/static/css/main.40455b68.chunk.css.map",
+    "static/js/2.3aef39f8.chunk.js.LICENSE.txt": "/static/js/2.3aef39f8.chunk.js.LICENSE.txt",
+    "static/media/CV_Jiyeon_Yoon.pdf": "/static/media/CV_Jiyeon_Yoon.d095b079.pdf",
     "static/media/after-the-game.svg": "/static/media/after-the-game.61645b73.svg",
     "static/media/intro.styles.scss": "/static/media/background.c1394bb5.jpg",
     "static/media/before-the-game.svg": "/static/media/before-the-game.b3077889.svg",
@@ -33,9 +34,9 @@
     "static/media/sign-up-page.svg": "/static/media/sign-up-page.6d8dca18.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ffd339f4.js",
-    "static/js/2.feb3fcb1.chunk.js",
-    "static/css/main.b7520c00.chunk.css",
-    "static/js/main.8a5061e2.chunk.js"
+    "static/js/runtime-main.9b126251.js",
+    "static/js/2.3aef39f8.chunk.js",
+    "static/css/main.40455b68.chunk.css",
+    "static/js/main.5378f7cb.chunk.js"
   ]
 }
