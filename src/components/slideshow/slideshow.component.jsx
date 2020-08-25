@@ -3,9 +3,14 @@ import { useParams } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import { ticTacToe } from "../../project/tic-tac-toe/tic-tac-toe";
 import { eCommerce } from "../../project/e-commerce/e-commerce";
+import { dijkstra } from "../../project/dijkstra/dijkstra";
 import "./slideshow.styles.scss";
 
-const projects = { "tic-tac-toe-online": ticTacToe, "e-commerce": eCommerce };
+const projects = {
+  "tic-tac-toe-online": ticTacToe,
+  "e-commerce": eCommerce,
+  "dijkstras-algorithm-visualizer": dijkstra
+};
 
 const Slideshow = () => {
   const [index, setIndex] = useState(0);
@@ -20,11 +25,6 @@ const Slideshow = () => {
   const slides = projects[projectName];
 
   if (!slides) {
-    // Temporary Code
-    if (projectName === "dijkstra") {
-      return <h1>Coming Soon.</h1>;
-    }
-
     return (
       <div className="no-match">
         <h1>Please click one of the projects on the menu.</h1>
