@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9936dd0a77f43c839c5f87c25834172d",
+    "revision": "7103d6742134a11d25ae96d0ce93e699",
     "url": "/index.html"
   },
   {
-    "revision": "618f4c6cc982da102d84",
+    "revision": "e59aa6b19816eb91f056",
     "url": "/static/css/main.40455b68.chunk.css"
   },
   {
-    "revision": "80b3b3aa046e23c875ca",
-    "url": "/static/js/2.3aef39f8.chunk.js"
+    "revision": "1c05bd684e206d922e23",
+    "url": "/static/js/2.3921279e.chunk.js"
   },
   {
     "revision": "176c1a1a28b19c611d9701905d8d60b7",
-    "url": "/static/js/2.3aef39f8.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3921279e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "618f4c6cc982da102d84",
-    "url": "/static/js/main.5378f7cb.chunk.js"
+    "revision": "e59aa6b19816eb91f056",
+    "url": "/static/js/main.09cc7308.chunk.js"
   },
   {
     "revision": "420d11f43645d04fc865",
     "url": "/static/js/runtime-main.9b126251.js"
   },
   {
-    "revision": "d095b0794fa6a751906fa89030ad2c1a",
-    "url": "/static/media/CV_Jiyeon_Yoon.d095b079.pdf"
+    "revision": "d301064e13754e7012e7950e3727390d",
+    "url": "/static/media/Jiyeon_Yoon_CV.d301064e.pdf"
   },
   {
     "revision": "61645b73b4c58d27597bd40d38aa771a",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5cbefb2145b2fedb7c691137a02f0c39",
     "url": "/static/media/cart-page.5cbefb21.svg"
+  },
+  {
+    "revision": "7333f662792562950dc822c8211e0d89",
+    "url": "/static/media/change-node-settings.7333f662.svg"
   },
   {
     "revision": "b2ec85c93be39cf2ca32c0b321c46a68",
@@ -64,6 +68,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/create-a-room.423c60bb.svg"
   },
   {
+    "revision": "3a478e8c058706aeff9dcb86977d2905",
+    "url": "/static/media/different-result.3a478e8c.svg"
+  },
+  {
     "revision": "ab531cbfb937f288944d5126e49f5cf1",
     "url": "/static/media/during-the-game.ab531cbf.svg"
   },
@@ -84,6 +92,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/homepage.f69d5046.svg"
   },
   {
+    "revision": "437e8251b9ac795a215723df007b23ff",
+    "url": "/static/media/introduction.437e8251.svg"
+  },
+  {
     "revision": "08c573a25c32dc3dd74bf860a85f53c6",
     "url": "/static/media/profile.08c573a2.jpg"
   },
@@ -94,6 +106,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ff087967598fb83faeb7f4fbec3bce96",
     "url": "/static/media/search.ff087967.svg"
+  },
+  {
+    "revision": "56fc3fd2778eba4a26ebc80cf1218c3c",
+    "url": "/static/media/settings.56fc3fd2.svg"
+  },
+  {
+    "revision": "4bdefb42dcae987d208b391a9d68f74d",
+    "url": "/static/media/show-result.4bdefb42.svg"
   },
   {
     "revision": "a5c281ca001015895a0616a2429e76fe",
