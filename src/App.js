@@ -13,7 +13,7 @@ import "./App.css";
 function App() {
   return (
     <Switch>
-      <Route exact path="/dijkstra">
+      <Route exact path="/dijkstras-algorithm-visualizer">
         <Dijkstra />
       </Route>
       <Route path="/">

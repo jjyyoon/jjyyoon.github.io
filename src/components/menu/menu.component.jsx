@@ -15,9 +15,13 @@ const Menu = () => (
     <div className="links">
       <MenuLink to="/" content="Home" />
       <div>Projects</div>
-      <ProjectItem name="Tic-Tac-Toe" to="tic-tac-toe-online" site={null} />
-      <ProjectItem name="e-commerce" to="e-commerce" site="https://starletclothing.co.uk/" />
-      <ProjectItem name="Dijkstra's algorithm" to="dijkstra" site="/#/dijkstra" />
+      <ProjectItem name="Tic-Tac-Toe Online" to="tic-tac-toe-online" site={null} />
+      <ProjectItem name="Shop with Starlet" to="e-commerce" site="https://starletclothing.co.uk/" />
+      <ProjectItem
+        name="Dijkstra's Algorithm Visualizer"
+        to="dijkstra"
+        site="/#/dijkstras-algorithm-visualizer"
+      />
       <MenuLink to="/cv" content="CV (Curriculum Vitae)" />
     </div>
 
