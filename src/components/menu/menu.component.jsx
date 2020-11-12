@@ -22,7 +22,8 @@ const Menu = () => (
         to="dijkstra"
         site="/#/dijkstras-algorithm-visualizer"
       />
-      <MenuLink to="/cv" content="CV (Curriculum Vitae)" />
+      <MenuLink to="/cv/eng" content="CV (Curriculum Vitae)" />
+      <MenuLink to="/cv/kor" content="이력서" />
     </div>
 
     <div className="icon-container">
