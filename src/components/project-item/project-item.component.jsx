@@ -2,15 +2,16 @@ import React from "react";
 import MenuLink from "../menu-link/menu-link.component";
 import "./project-item.styles.scss";
 
-const ProjectItem = ({ name, to, site }) => (
+const SubmenuItem = ({ parent, name, to, site }) => (
   <div>
-    <MenuLink to={"/projects/" + to} content={"　· " + name} />
-    <p>
-      <MenuLink href={"https://github.com/jjyyoon/" + to} content="Source code" />
-      {"｜"}
-      <MenuLink href={site} content={!site ? "Online soon" : "View online"} />
-    </p>
+    <MenuLink to={`/${parent}/` + to} content={"　· " + name} />
+    {parent === "project" ? (
+      <p>
+        <MenuLink href={"https://github.com/jjyyoon/" + to} content="Source code" />
+        <MenuLink href={site} content={site ? "｜View online" : null} />
+      </p>
+    ) : null}
   </div>
 );
 
-export default ProjectItem;
+export default SubmenuItem;

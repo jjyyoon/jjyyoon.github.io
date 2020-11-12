@@ -24,7 +24,7 @@ function App() {
               <Route exact path="/">
                 <Intro />
               </Route>
-              <Route path="/projects/:projectName">
+              <Route path="/project/:projectName">
                 <Slideshow />
               </Route>
               <Route path="/cv/:language">

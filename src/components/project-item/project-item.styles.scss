@@ -1,8 +1,16 @@
-.links div p {
-    font-size: 0.83em;
-    font-weight: 400;
+.menu-item div {
+    padding-bottom: 0.25rem;
 
-    &::before {
-        content: "　　";
+    &:first-child {
+        padding-top: 0.25rem;
+    }
+
+    p {
+        font-size: 0.83em;
+        font-weight: 400;
+
+        &::before {
+            content: "　　";
+        }
     }
 }
