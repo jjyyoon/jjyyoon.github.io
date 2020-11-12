@@ -1,6 +1,6 @@
 import React from "react";
 import MenuLink from "../menu-link/menu-link.component";
-import "./project-item.styles.scss";
+import "./submenu-item.styles.scss";
 
 const SubmenuItem = ({ parent, name, to, site }) => (
   <div>

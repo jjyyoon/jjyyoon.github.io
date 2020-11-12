@@ -2,7 +2,7 @@ import React from "react";
 
 import { Col } from "react-bootstrap";
 import MenuLink from "../menu-link/menu-link.component";
-import SubmenuItem from "../project-item/project-item.component";
+import SubmenuItem from "../submenu-item/submenu-item.component";
 
 import profile from "../../assets/profile.jpg";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
