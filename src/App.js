@@ -27,7 +27,7 @@ function App() {
               <Route path="/projects/:projectName">
                 <Slideshow />
               </Route>
-              <Route path="/cv">
+              <Route path="/cv/:language">
                 <CV />
               </Route>
             </Col>
