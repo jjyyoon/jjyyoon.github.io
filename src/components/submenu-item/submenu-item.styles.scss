@@ -1,0 +1,16 @@
+.menu-item div {
+    padding-bottom: 0.25rem;
+
+    &:first-child {
+        padding-top: 0.25rem;
+    }
+
+    p {
+        font-size: 0.83em;
+        font-weight: 400;
+
+        &::before {
+            content: "　　";
+        }
+    }
+}

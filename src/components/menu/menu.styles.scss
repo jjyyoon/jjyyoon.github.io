@@ -10,9 +10,9 @@
     padding: 3rem 1rem 5rem;
 
     & > a,
-    & > div {
+    .menu-item {
       display: block;
-      padding-bottom: 0.5rem;
+      padding-bottom: 1rem;
       color: rgb(128, 128, 128);
       font-weight: 600;
     }
