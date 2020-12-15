@@ -7,7 +7,7 @@ import cvKor from "../../assets/Jiyeon_Yoon_CV_Kor.pdf";
 const cvList = {
   eng: {
     cv,
-    href: "https://drive.google.com/file/d/1UCpPpO05bV4bbRYgBYQFkaXtUKn9O8gl/view?usp=sharing"
+    href: "https://drive.google.com/file/d/1fyUtx2ua_xT6jyQFSm7EmX4GRwvQ1zeM/view?usp=sharing"
   },
   kor: {
     cv: cvKor,
