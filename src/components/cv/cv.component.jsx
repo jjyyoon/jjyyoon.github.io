@@ -7,11 +7,11 @@ import cvKor from "../../assets/Jiyeon_Yoon_CV_Kor.pdf";
 const cvList = {
   eng: {
     cv,
-    href: "https://drive.google.com/file/d/1fyUtx2ua_xT6jyQFSm7EmX4GRwvQ1zeM/view?usp=sharing"
+    href: "https://drive.google.com/file/d/1ODmCPZO75B3hfBuVFRZ1pT81A-B9ZAyG/view?usp=sharing"
   },
   kor: {
     cv: cvKor,
-    href: "https://drive.google.com/file/d/1iMMz4qECuWjOLsWPJ21sE2i0xgcRwncK/view?usp=sharing"
+    href: "https://drive.google.com/file/d/190nGR6ciVxZ1-3un__F_2M505p8Hk2TD/view?usp=sharing"
   }
 };
 
@@ -27,8 +27,9 @@ const CV = () => {
   return (
     <object data={cv} width="100%" height="100%">
       <embed type="application/pdf" src={cv} width="100%" height="100%" />
-      <p>
+      <p style={{ textAlign: "center" }}>
         Your browser does not support PDFs.
+        <br />
         <a href={href} target="_blank" rel="noopener noreferrer">
           Click here to view it.
         </a>
